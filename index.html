@@ -67,12 +67,11 @@
         
         <!-- Desktop Nav -->
         <nav class="hidden md:flex items-center gap-8">
-            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Produits</a>
-            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Solutions</a>
-            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
-            <button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-sm">
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#solution">Solution</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+            <a href="test.html" class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-sm">
                 Tester
-            </button>
+            </a>
         </nav>
         
         <!-- Mobile Menu Button -->
@@ -84,12 +83,11 @@
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="mobile-menu fixed top-16 right-0 bottom-0 w-72 bg-white dark:bg-background-dark border-l border-gray-100 dark:border-gray-800 md:hidden">
         <nav class="flex flex-col p-6 gap-4">
-            <a class="text-lg font-medium hover:text-primary transition-colors py-2" href="#">Produits</a>
-            <a class="text-lg font-medium hover:text-primary transition-colors py-2" href="#">Solutions</a>
-            <a class="text-lg font-medium hover:text-primary transition-colors py-2" href="#">Contact</a>
-            <button class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-xl text-base font-bold transition-all shadow-lg mt-4">
+            <a class="text-lg font-medium hover:text-primary transition-colors py-2" href="#solution">Solution</a>
+            <a class="text-lg font-medium hover:text-primary transition-colors py-2" href="#contact">Contact</a>
+            <a href="test.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-xl text-base font-bold transition-all shadow-lg mt-4">
                 Tester maintenant
-            </button>
+            </a>
         </nav>
     </div>
 </header>
@@ -106,12 +104,12 @@
                     Entraînez vos équipes en pharmacie avec des clients virtuels ultra-réalistes. Plus de maîtrise conseil, plus de ventes, dès le 2ᵉ mois.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-                    <button class="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold transition-all shadow-lg shadow-primary/20">
+                    <a href="test.html" class="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold transition-all shadow-lg shadow-primary/20 inline-block text-center">
                         Commencer l'essai
-                    </button>
-                    <button class="bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold transition-all">
-                        Voir la démo
-                    </button>
+                    </a>
+                    <a href="#contact" class="bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold transition-all inline-block text-center">
+                        Nous contacter
+                    </a>
                 </div>
             </div>
             <div class="flex-1 w-full max-w-2xl">
@@ -165,10 +163,10 @@
     </section>
 
     <!-- Solutions Section -->
-    <section class="bg-white dark:bg-background-dark py-16 sm:py-24">
+    <section id="solution" class="bg-white dark:bg-background-dark py-16 sm:py-24">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div class="mb-10 sm:mb-16 text-center">
-                <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Solutions</p>
+                <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Solution</p>
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">Une solution pensée pour la pharmacie moderne</h2>
                 <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Former vite, former juste, former à grande échelle.</p>
             </div>
@@ -212,7 +210,7 @@
     </section>
 
     <!-- CTA & Form Section -->
-    <section class="py-16 sm:py-24 bg-white dark:bg-background-dark border-t border-gray-100 dark:border-gray-800">
+    <section id="contact" class="py-16 sm:py-24 bg-white dark:bg-background-dark border-t border-gray-100 dark:border-gray-800">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
                 <div class="flex-1 text-center lg:text-left">
