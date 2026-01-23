@@ -81,7 +81,7 @@
     </div>
     
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="mobile-menu fixed top-16 right-0 bottom-0 w-72 bg-white dark:bg-background-dark border-l border-gray-100 dark:border-gray-800 md:hidden">
+    <div id="mobileMenu" class="mobile-menu fixed top-16 right-0 bottom-0 w-72 bg-white border-l border-gray-100 shadow-2xl md:hidden">
         <nav class="flex flex-col p-6 gap-4">
             <a class="text-lg font-medium hover:text-primary transition-colors py-2" href="#solution">Solution</a>
             <a class="text-lg font-medium hover:text-primary transition-colors py-2" href="#contact">Contact</a>
@@ -115,7 +115,7 @@
             <div class="flex-1 w-full max-w-2xl">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-primary to-blue-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-                    <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-2xl overflow-hidden aspect-[4/3] flex items-center justify-center border border-gray-100 dark:border-gray-800" style="background-image: url('assets/images/hero.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-2xl overflow-hidden aspect-video lg:aspect-[16/9] flex items-center justify-center border border-gray-100 dark:border-gray-800" style="background-image: url('assets/images/hero.jpg'); background-size: cover; background-position: center;">
                     </div>
                 </div>
             </div>
@@ -162,13 +162,26 @@
         </div>
     </section>
 
+    <!-- Demo Video Section -->
+    <section class="bg-white dark:bg-background-dark py-16 sm:py-24">
+        <div class="max-w-[1000px] mx-auto px-4 sm:px-6 text-center">
+            <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Démonstration</p>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-8 tracking-tight">Découvrez SimSell en situation réelle</h2>
+            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto mb-8 sm:mb-12">Voyez comment un vendeur s'entraîne face à un client virtuel, comme en officine.</p>
+            <div class="relative w-full aspect-video rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-gray-100 dark:border-gray-800 bg-black">
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="absolute top-0 left-0 w-full h-full" frameborder="0" src="https://www.youtube.com/embed/kZiPX1XVn3E?rel=0&showinfo=0" title="Démonstration VirtualRetail">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <!-- Solutions Section -->
-    <section id="solution" class="bg-white dark:bg-background-dark py-16 sm:py-24">
+    <section id="solution" class="bg-[#f5f5f7] dark:bg-gray-900/50 py-16 sm:py-24">
         <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
             <div class="mb-10 sm:mb-16 text-center">
                 <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Solution</p>
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">Une solution pensée pour la pharmacie moderne</h2>
-                <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Former vite, former juste, former à grande échelle.</p>
+                <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8">Former vite, former juste, former à grande échelle.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                 <div class="flex flex-col gap-4 sm:gap-5 p-5 sm:p-6 rounded-2xl bg-[#f5f5f7] dark:bg-slate-900 border border-slate-100 dark:border-slate-800 transition-all hover:shadow-xl">
@@ -196,15 +209,70 @@
         </div>
     </section>
 
-    <!-- Demo Video Section -->
+    <!-- Pricing Section -->
+    <section class="bg-white dark:bg-background-dark py-16 sm:py-24 border-t border-gray-100 dark:border-gray-800">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Tarifs</p>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Des prix adaptés à votre structure</h2>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gradient-to-br from-primary/5 to-blue-50 dark:from-primary/10 dark:to-gray-800 p-8 sm:p-12 rounded-3xl border-2 border-primary/20 text-center">
+                    <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        <span class="material-symbols-outlined" style="font-size: 20px;">local_pharmacy</span>
+                        Offre Pharmacie
+                    </div>
+                    <h3 class="text-3xl sm:text-4xl font-black mb-4">À partir de 200€<span class="text-xl font-normal text-gray-600 dark:text-gray-400">/mois</span></h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+                        Pour une pharmacie avec <strong class="text-gray-900 dark:text-white">&lt;1M€ de CA annuel</strong>
+                    </p>
+                    <ul class="text-left space-y-3 mb-8 max-w-md mx-auto">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_circle</span>
+                            <span class="text-gray-700 dark:text-gray-300">Accès illimité aux simulations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_circle</span>
+                            <span class="text-gray-700 dark:text-gray-300">Scénarios personnalisés</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_circle</span>
+                            <span class="text-gray-700 dark:text-gray-300">Suivi des performances en temps réel</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_circle</span>
+                            <span class="text-gray-700 dark:text-gray-300">Support technique dédié</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg shadow-primary/20 transition-all hover:scale-105">
+                        Demander un devis personnalisé
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
     <section class="bg-[#f5f5f7] dark:bg-gray-900/50 py-16 sm:py-24">
-        <div class="max-w-[1000px] mx-auto px-4 sm:px-6 text-center">
-            <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Démonstration</p>
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-8 tracking-tight">Découvrez SimSell en situation réelle</h2>
-            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto mb-8 sm:mb-12">Voyez comment un vendeur s'entraîne face à un client virtuel, comme en officine.</p>
-            <div class="relative w-full aspect-video rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-gray-100 dark:border-gray-800 bg-black">
-                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="absolute top-0 left-0 w-full h-full" frameborder="0" src="https://www.youtube.com/embed/kZiPX1XVn3E?rel=0&showinfo=0" title="Démonstration VirtualRetail">
-                </iframe>
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Partenaires techniques</p>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Propulsé par les leaders de l'IA</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Nous collaborons avec les plus grandes entreprises technologiques pour vous offrir la meilleure expérience.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 items-center">
+                <div class="flex items-center justify-center p-6 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-all">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="h-8 sm:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                </div>
+                <div class="flex items-center justify-center p-6 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-all">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg" alt="NVIDIA" class="h-8 sm:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                </div>
+                <div class="flex items-center justify-center p-6 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-all">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Cloud" class="h-8 sm:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+                </div>
+                <div class="flex items-center justify-center p-6 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-all">
+                    <div class="text-2xl sm:text-3xl font-bold text-gray-700 dark:text-gray-300">ElevenLabs</div>
+                </div>
             </div>
         </div>
     </section>
@@ -218,14 +286,6 @@
                     <p class="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-6 sm:mb-8">
                         Testez SimSell et mesurez l'impact sur vos ventes en conditions réelles.
                     </p>
-                    <div class="flex items-center gap-4 sm:gap-6 justify-center lg:justify-start">
-                        <div class="flex -space-x-3">
-                            <img alt="User avatar" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white dark:border-gray-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJyJ9TuCOmlMi5fXOsAoxTfne7dlIjIHCNdc7qZbP0Dau6lRfcHF6KDH_z1c7-PN02UbpEu0_78sDEqPtW70ALHZXxKiXzPGk-5y2NLfW7m4fwC-hOUpSNYWBIt6KYFsD-bjWP5JkXXIoyPW8yGkheOzYmIP4BW3PSTe4B4IG-UjUW1sWTv2h2qM6YPKTTJFnJnvl8T3KgfyK47i_1Ufx0q6kbMfs3M2qC0qVEx56dL7qEhKFT-3aU4YkO2CVLwyu2PkC484YelgU"/>
-                            <img alt="User avatar" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white dark:border-gray-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7JTRBL1Qxh5R9CtCgYC0Q0G4olde2I7RMFE5hRNqwDSx7uSwAcxUM0kK4l6M0ZVJAGX4-aMbPSMuelE2tIjpJtu2rLLpUcI-x86666lLpOl6KI4-rQNGhxWvFbGV3No8glEcYy9bQlhUPyErd2-hmpJ7K5dNvdNmkO-rM4DYPFanfea0NhFDbfA42YEVGmLfiC_Tnm0bNlSzCoE1-0NvX3q9-jY9P9gCXEu-puTf9QBUQIRVyZVTgfBXkPs3N_JjHCMU4DGAaz48"/>
-                            <img alt="User avatar" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white dark:border-gray-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE0VmSPDhKP8jZITiJSR7MIyPCpjvT4kknYD2JupGtcKyNdST-vLQBDNHdiJ5Ah5vWWdz2yRAVvtmOkIzjLyydqRztxtidVc5hHObpmmjXpZ0nq-hLAlL1Mcx6J0H3o6q330tbpR4nSPEABq5-iitDwt61juyLBEfA85sqRXstIvfeKy_wgtWfooDMoxa01KvAojFi3K3Dzxgb3DzJQL5BwA5QXEjZGUg4ko_zntT7nWNN7OcvC5WpB-7WK1JzdopkhuB4ZKGvfZk"/>
-                        </div>
-                        <span class="text-xs sm:text-sm font-medium text-gray-500">Approuvé par des experts</span>
-                    </div>
                 </div>
                 <div class="flex-1 w-full max-w-md">
                     <div class="bg-[#f5f5f7] dark:bg-gray-800 p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm">
