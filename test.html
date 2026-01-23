@@ -211,9 +211,9 @@
                     <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                         <span class="material-symbols-outlined text-primary text-4xl">mail</span>
                     </div>
-                    <h3 class="text-2xl sm:text-3xl font-bold mb-4">Avant de commencer</h3>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-4">Prêt à commencer ?</h3>
                     <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                        Nous vous demandons votre email pour vous communiquer les <strong>informations complémentaires au feedback du jour</strong>. 
+                        Laissez-nous votre email <span class="text-gray-400">(optionnel)</span> pour recevoir les <strong>informations complémentaires au feedback</strong>. 
                         Vous ne serez pas inscrit à une newsletter, seule l'équipe Metagora aura votre mail pour échanger sur la solution uniquement.
                     </p>
                     
@@ -222,9 +222,8 @@
                             <input 
                                 type="email" 
                                 id="emailInput"
-                                required
-                                placeholder="votre.email@exemple.com" 
-                                class="flex-1 h-14 px-6 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-base"
+                                placeholder="votre.email@exemple.com (optionnel)" 
+                                class="flex-1 h-14 px-6 rounded-xl border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-base text-gray-500"
                             />
                             <button 
                                 type="submit"
@@ -281,16 +280,14 @@
         e.preventDefault();
         const email = document.getElementById('emailInput').value;
         
+        // Stocker l'email si fourni
         if (email) {
-            // Stocker l'email (vous pouvez l'envoyer à votre backend ici)
             localStorage.setItem('userEmail', email);
-            
-            // Rediriger vers la simulation (à créer)
-            alert('Merci ! La simulation complète sera bientôt disponible.\n\nVotre email : ' + email + '\n\nNous vous contacterons dès que la simulation sera prête.');
-            
-            // Pour l'instant, retour à l'accueil
-            // window.location.href = 'simulation.html'; // À créer plus tard
+            // Vous pouvez aussi envoyer l'email à votre backend ici
         }
+        
+        // Rediriger vers la simulation Metaverse
+        window.location.href = 'https://metaverse.ww.fo/avatarworld/?scenario=scenario-1768561439435&lang=fr';
     });
 </script>
 
